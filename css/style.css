@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clr-fix {
+	clear: both;
+}
+
+.home {
+	background-image: url(../images/1.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;	
+	text-align: center;
+}
+
+.navBackground {
+	background: rgba(0, 0, 0, 0.80);
+	height: 100vh;
+}
+
+.home .title {
+	text-align: center;
+  margin-top: 220px;
+	margin-left: auto;
+}
+
+
+.title h3,
+.title h1,
+.title h4 {
+	margin: 0px 0px 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+.title h3 {
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 26.4px;
+	font-weight: 600;
+}
+
+.title h1 {
+	color: #FF305B;
+	font-size: 70px;
+	line-height: 77px;
+	font-weight: 700;
+}
+
+.title h4 {
+	color: #ffffff;
+	font-size: 26px;
+	line-height: 31.2px;
+	font-weight: 300;
+	position: relative;
+	animation: .5s linear 1s infinite alternate slidein;
+}
+
+.home .nav {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: sticky;
+}
+
+
+.home .list-nav  {
+	display: inline-block;
+	text-transform: capitalize;
+	text-decoration: none;
+	list-style-type: none;
+	vertical-align: baseline;
+	margin-left: 400px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+  padding: 0px 10px;
+}
+
+.home .nav ul li {
+	padding: 15px;
+	color: red;
+	float: left;
+}
+
+.home .nav a {
+	float: right;
+  text-decoration: none;
+	color: #ffffff;
+}
+
+.home .list-nav a:hover {
+	color: #FF305B;
+	font-weight: 300;
+	transition: all .4s ease-in-out;
+}
+
+.home .list-nav a:active{
+	color: #FF305B;
+	font-weight: 300;
+}
+
+.home .logo-nav a {
+	text-decoration: none;
+	float: left;
+	color: #FF305B;
+  font-size: 24px;
+	line-height: 25px;
+	padding: 17px 0px;
+	font-weight: 700;
+	margin-left: 190px;
+	text-transform: capitalize;
+}
+
+.title h4::after {
+	content: "";
+	background-color: #ffffff;
+	height: 30px;
+	width: 2px;
+	position: absolute;
+  bottom: 0px;
+	left: 60%;
+	animation: .5s linear 1s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(1%);
+  }
+
+  to {
+    transform: translateX(2%);
+  }
+}
